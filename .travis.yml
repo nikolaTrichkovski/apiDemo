@@ -1,17 +1,6 @@
 language: ruby
 ruby:
-  - 3.2.2
+  -3.2.2
 
 services:
-  - postgresql
-
-before_script:
-  - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database travis_ci_test;' -U postgres
-
-script:
-  - bundle exec rake db:migrate RAILS_ENV=test
-  - bundle exec rake
-
-notifications:
-  email: false
+- postgresql
