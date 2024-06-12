@@ -1,5 +1,5 @@
 language: ruby
-ruby:
+rvm:
   - 3.2.2
 
 services:
